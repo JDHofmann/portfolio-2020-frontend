@@ -5,9 +5,9 @@ class ProjectsContainer extends React.Component{
 
     render(){
         return(
-            <div className="main content">
-                <h3>Projects</h3>
-            </div>
+            <main id="main" className="main content">
+                <h2>Projects</h2>
+            </main>
         )
     }
 }
