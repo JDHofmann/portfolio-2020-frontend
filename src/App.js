@@ -13,7 +13,7 @@ class App extends React.Component{
       <>
         <Header />
         <ProjectsContainer />
-        <span className="section-divider"></span>
+        {/* <span className="section-divider"></span> */}
         <About />
         <Footer />
       </>
