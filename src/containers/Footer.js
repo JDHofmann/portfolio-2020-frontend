@@ -4,9 +4,12 @@ const Footer = () => {
     return (
         <footer className="dark footer" >
             <div className="outter footer-grid">
-                {/* <h3>Footer</h3> */}
+                <h2>Contact JD</h2>
                 <a target="_blank" href="https://jdbrewerhofmann.medium.com/">Medium</a>
                 <a target="_blank" href="https://github.com/JDHofmann">GitHub</a>
+                <a 
+                    className="email"
+                    target="_blank" href="email:jdbrewerhofmann@gmail.com">jdbrewerhofmann@gmail.com</a>
             </div>
         </footer>
     )

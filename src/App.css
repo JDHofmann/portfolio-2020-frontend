@@ -4,7 +4,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a {
   list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif */
 }
 
 .dark {
@@ -98,23 +98,31 @@ h3 {
 
 .footer {
   width: 100%;
-  line-height: 5vh;
   margin-top: 5vh;
 }
 
 .footer-grid {
-  display: flex;
+  /* display: flex;
   justify-content: space-evenly;
   justify-items: center;
-  align-items: center;
+  align-items: center; */
+}
+
+.footer h2 {
+  padding-bottom: 1vh;
 }
 
 .footer a {
   color: #ffffff;
-  font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (800 - 320)));
-  font-weight: 600;
-  text-decoration: underline;
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (800 - 320)));
+  font-weight: 400;
+  text-decoration: underline dotted;
+  /* border-bottom: 1px dashed; */
+  display: block;
+  padding: 1vh 0;
 }
+
+
 .footer a:hover, .footer a:focus {
   transition: .4s;
   color: #ffa080;
