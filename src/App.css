@@ -4,8 +4,10 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a {
   list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
+
   /* font-family:Verdana, Geneva, Tahoma, sans-serif */
 }
+
 
 .dark {
   background: linear-gradient(#001060, #000030);
@@ -67,6 +69,7 @@ header {
   padding: 2.5vh 0;
   margin: 2.5vh auto;
   color: #001060;
+  background: #ffffff;
 }
 
 
@@ -137,6 +140,8 @@ h3 {
 .footer {
   width: 100%;
   margin-top: 5vh;
+  background: linear-gradient(#000040, #000020);
+
 }
 
 .footer-grid {
@@ -174,11 +179,10 @@ h3 {
 .slider {
   position: relative;
   width: 100%;
-  margin: 2.5vh auto;
+  margin: 5vh auto;
   height: 50vh;
   overflow: hidden;
   white-space: nowrap;
-  box-shadow: 2px 2px 6px #d0d0d0;
   box-shadow: 1px 1px 4px #00106060;
 
 }

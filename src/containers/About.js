@@ -1,5 +1,5 @@
 import React from 'react'
-import biopic from '../bio-pic-small.jpeg'
+import biopic from '../images/bio-pic-small.jpeg'
 
 const About = () => {
     return (
