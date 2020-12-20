@@ -169,3 +169,62 @@ h3 {
   color: #ffa080;
   color: #ffb020;
 }
+
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: 2.5vh auto;
+  height: 50vh;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 2px 2px 6px #d0d0d0;
+  box-shadow: 1px 1px 4px #00106060;
+
+}
+
+.slider-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.arrow {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff80;
+  box-shadow: 1px 1px 4px #00106060;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform ease-in .1s;
+}
+
+.nextArrow {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  z-index: 999;
+  color: #fff;
+}
+
+.backArrow {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  z-index: 999;
+  color: #fff;
+}
+
+.fa-arrow-right:before, .fa-arrow-left:before {
+  color: #222
+}
+
