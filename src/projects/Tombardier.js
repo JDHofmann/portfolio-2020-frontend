@@ -17,8 +17,16 @@ export const Tombardier = () => {
             />
             <div>
                 <h3>Links</h3>
-                <a href="https://github.com/JDHofmann/tombardier-frontend-dev">Frontend Repository</a>
-                <a href="https://github.com/JDHofmann/tombardier-bakendend-dev">Backend Repository</a>
+                <a 
+                    className="project-link"
+                    target="_blank"
+                    href="https://github.com/JDHofmann/tombardier-frontend-dev">Frontend Repository
+                </a>
+                <a 
+                    className="project-link"
+                    target="_blank"
+                    href="https://github.com/JDHofmann/tombardier-bakendend-dev">Backend Repository
+                </a>
             </div>
         </div>
     )

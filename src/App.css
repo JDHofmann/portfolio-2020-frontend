@@ -4,14 +4,13 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a {
   list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
-
-  /* font-family:Verdana, Geneva, Tahoma, sans-serif */
 }
 
 
 .dark {
   background: linear-gradient(#001060, #000030);
   color: #ffffff;
+  background: #001a50;
 }
 
 header {
@@ -35,13 +34,6 @@ header {
   padding: 5vh 0;
 }
 
-.section-divider {
-  border: 2px solid #202020;
-  width: 90%;
-  /* use the fluid math for fonts here too */
-  margin: 0 auto;
-  display: block;
-}
 @media screen and (min-width: 320px) {
   .content, .section-divider {
       width: calc(288px + 512 * ((100vw - 320px) / 960 ));
@@ -64,7 +56,6 @@ header {
   color: red;
 }
 
-
 .main {
   padding: 2.5vh 0;
   margin: 2.5vh auto;
@@ -72,14 +63,13 @@ header {
   background: #ffffff;
 }
 
-
 h1 {
   font-size: calc(22px + (36 - 22) * ((100vw - 320px) / (800 - 320)));
 }
 
 .subtitle {
   color: #ffffff;
-  color: #9ceefd;
+  color: #9aeaff;
 }
 
 h2 {
@@ -91,18 +81,6 @@ h2 {
 
 h3 {
   font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (800 - 320)));
-}
-
-
-.tom {
-  background-image: url('./images/tombardier01.png');
-  background-position: center;
-}
-
-.image-container {
-  border: 2px solid #001060;
-  width: 100%;
-  height: 50vh;
 }
 
 .about {
@@ -140,39 +118,39 @@ h3 {
 .footer {
   width: 100%;
   margin-top: 5vh;
-  background: linear-gradient(#000040, #000020);
+  /* background: linear-gradient(#000040, #000020); */
 
-}
-
-.footer-grid {
-  /* display: flex;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-items: center; */
 }
 
 .footer h2 {
-  border-color: #ffb020;
   border-color: #ffffff;
-
 }
 
-.footer a {
-  color: #ffffff;
-  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (800 - 320)));
+
+.footer a, .project-link {
+  font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (800 - 320)));
   font-weight: 400;
   text-decoration: underline dotted;
-  text-decoration: underline;
-  /* border-bottom: 1px dashed; */
   display: block;
   padding: 1vh 0;
 }
 
+.footer a {
+  color: #9aeaff;
+}
+
+.project-link {
+  color: #001a50;
+}
+.project-link:hover, .project-link:focus {
+  transition: .4s;
+  text-decoration: underline;
+}
 
 .footer a:hover, .footer a:focus {
   transition: .4s;
-  color: #ffa080;
-  color: #ffb020;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 
@@ -184,7 +162,6 @@ h3 {
   overflow: hidden;
   white-space: nowrap;
   box-shadow: 1px 1px 4px #00106060;
-
 }
 
 .slider-wrapper {
@@ -231,4 +208,5 @@ h3 {
 .fa-arrow-right:before, .fa-arrow-left:before {
   color: #222
 }
+
 
