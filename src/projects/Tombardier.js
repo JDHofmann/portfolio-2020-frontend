@@ -16,7 +16,7 @@ export const Tombardier = () => {
                 images={images}
             />
             <div>
-                <h3>Links</h3>
+                <h3>Project Links</h3>
                 <a 
                     className="project-link"
                     target="_blank"
