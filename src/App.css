@@ -9,7 +9,9 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a {
 
 .dark {
   background: #202020;
+  background: #150050;
   color: #ffffff;
+  color: #ffb020;
 }
 
 .content, .outter {
@@ -61,6 +63,11 @@ h1 {
   font-size: calc(22px + (36 - 22) * ((100vw - 320px) / (800 - 320)));
 }
 
+.subtitle {
+  color: #ffffff;
+  /* color: #ffa000; */
+}
+
 h2 {
   font-size: calc(17px + (24 - 17) * ((100vw - 320px) / (800 - 320)));
   border-bottom: 2px solid #202020;
@@ -71,6 +78,13 @@ h2 {
 h3 {
   font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (800 - 320)));
 }
+
+
+.tom {
+  background-image: url('./images/tombardier01.png');
+  background-position: center;
+}
+
 
 .about {
   padding: 2.5vh 0;
@@ -125,6 +139,7 @@ h3 {
   font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (800 - 320)));
   font-weight: 400;
   text-decoration: underline dotted;
+  text-decoration: underline;
   /* border-bottom: 1px dashed; */
   display: block;
   padding: 1vh 0;
@@ -134,4 +149,6 @@ h3 {
 .footer a:hover, .footer a:focus {
   transition: .4s;
   color: #ffa080;
+  color: #ffb020;
+
 }

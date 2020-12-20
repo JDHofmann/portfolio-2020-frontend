@@ -7,7 +7,7 @@ const Header = () => {
         <header className="dark">
             <div className="outter titles">
                 <h1>JD Brewer-Hofmann</h1>
-                <p>Web Devoloper // All around good person</p>
+                <p className="subtitle">Web Devoloper // All around good person</p>
             </div>
         </header>
         </>

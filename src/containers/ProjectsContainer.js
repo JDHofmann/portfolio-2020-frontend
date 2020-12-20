@@ -1,37 +1,38 @@
 import React from 'react'
-import { Switch, Route } from 'react-router'
-import {projects} from '../projects.js'
+import { Route, Switch } from 'react-router'
+import { NavLink } from 'react-router-dom'
+import { Tombardier } from '../projects/Tombardier'
 
 class ProjectsContainer extends React.Component{
 
-    renderProjectLinks = () => {
-        return projects.map( p => 
-        <div key={p.title}>
-            <h3>{p.title}</h3>
-            <p>{p.subtitle}</p>
-            <img alt="" src={p.images[0]} />
-        </div>)
-    }
 
     render(){
-        console.log(projects)
         return(
 
             <Switch>
-                {/* <Route 
-                    path="*"
-                    render={() => <div>Something else</div>}
-                /> */}
                 <Route 
-                    path="/"
-                    render={() => 
-                        <main id="main" className="main content">
-                            <h2>Projects</h2>
-                            { this.renderProjectLinks() }
-                        </main>
+                    path="/tombardier"
+                    render={ () => 
+                        <Tombardier />
                     }
                 />
+                <Route 
+                    path="/"
+                    render={ () => 
+                        <main id="main" className="main content">
+                        <h2>Projects</h2>
+                        <div className="tom">
 
+                        <NavLink
+                            to="/tombardier"
+                        >
+                            <h3>Tombardier</h3>
+                            <p>Web portfolio building made simple</p>
+                        </NavLink>
+                        </div>
+                        </main> 
+                    }
+                />
             </Switch>
 
             
