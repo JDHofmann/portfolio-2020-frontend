@@ -5,11 +5,17 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a {
   text-decoration: none;
   box-sizing: border-box;
   /* font-family:Verdana, Geneva, Tahoma, sans-serif */
+  /* background: #FFF8F6; */
+
 }
 
 .dark {
-  background: linear-gradient(#001060, #000030);
-  color: #ffffff;
+  background: linear-gradient( #ff5f61  30%, #ff9e5f  33% 63% ,#66cc99 66%);
+  background: linear-gradient(#ff40a0, #ffa040);
+  /* background: linear-gradient(#ff50a0 20%, #ffa050 80%); */
+
+  background: #FFAA80;
+  /* color: #ffffff; */
 }
 
 header {
@@ -17,6 +23,9 @@ header {
   height: calc(150px + (300 - 150) * ((100vw - 320px) / (1200 - 320)));
   display: flex;
   align-items: flex-end;
+  border-bottom: 2.5vh solid #00a080;
+  /* border-bottom: 2.5vh solid #40c0a0; */
+
 }
 
 .titles {
@@ -66,7 +75,9 @@ header {
 .main {
   padding: 2.5vh 0;
   margin: 2.5vh auto;
-  color: #001060;
+  /* color: #006040; */
+  /* background: #FFF8F6; */
+
 }
 
 
@@ -75,8 +86,8 @@ h1 {
 }
 
 .subtitle {
-  color: #ffffff;
-  color: #9ceefd;
+  /* color: #ffffff;
+  color: #9ceefd; */
 }
 
 h2 {
