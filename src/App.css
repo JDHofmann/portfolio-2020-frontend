@@ -15,7 +15,8 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a {
 
 header {
   height: 25vh;
-  height: calc(150px + (300 - 150) * ((100vw - 320px) / (1200 - 320)));
+  min-height: 125px;
+  /* height: calc(125px + (300 - 150) * ((100vw - 320px) / (1200 - 320))); */
   display: flex;
   align-items: flex-end;
 }
@@ -119,8 +120,6 @@ h3 {
 .footer {
   width: 100%;
   margin-top: 5vh;
-  /* background: linear-gradient(#000040, #000020); */
-
 }
 
 .footer h2 {
@@ -128,13 +127,18 @@ h3 {
 }
 
 
-.footer a, .project-link {
+.footer a, .project-link, a {
   font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (800 - 320)));
   font-weight: 400;
   text-decoration: underline dotted;
   display: block;
   padding: 1vh 0;
 }
+
+a {
+  color: #001a50;
+}
+
 
 .footer a {
   color: #9aeaff;
@@ -160,6 +164,7 @@ h3 {
   width: 100%;
   margin: 5vh auto;
   height: 50vh;
+  min-height: 350px;
   overflow: hidden;
   white-space: nowrap;
   box-shadow: 1px 1px 4px #00106060;
@@ -183,31 +188,28 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff80;
-  box-shadow: 1px 1px 4px #00106060;
+  background: #9aeaff;
   border-radius: 50%;
   cursor: pointer;
-  transition: transform ease-in .1s;
+  transition: transform ease-in .3s;
 }
 
 .nextArrow {
   position: absolute;
-  top: 50%;
+  bottom: 5%;
   right: 5%;
   z-index: 999;
-  color: #fff;
 }
 
 .backArrow {
   position: absolute;
-  top: 50%;
+  bottom: 5%;
   left: 5%;
   z-index: 999;
-  color: #fff;
-}
-
-.fa-arrow-right:before, .fa-arrow-left:before {
-  color: #222
 }
 
 
+.fa-chevron-circle-right, .fa-chevron-circle-left{
+  color: #001050;
+  font-size: 38px;
+}

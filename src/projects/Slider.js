@@ -80,7 +80,7 @@ class Slider extends React.Component {
   const LeftArrow = (props) => {
     return (
       <div className="backArrow arrow" onClick={props.goToPrevSlide}>
-        <i className="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+        <i className="fas fa-chevron-circle-left" aria-hidden="true"></i>
       </div>
     );
   }
@@ -89,7 +89,8 @@ class Slider extends React.Component {
   const RightArrow = (props) => {
     return (
       <div className="nextArrow arrow" onClick={props.goToNextSlide}>
-        <i className="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
+        <i class="fas fa-chevron-circle-right" aria-hidden="true"></i>
+
       </div>
     );
   }
