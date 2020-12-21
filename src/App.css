@@ -213,3 +213,8 @@ a {
   color: #001050;
   font-size: 38px;
 }
+
+
+footer .fab, footer .fas {
+  padding-right: 2.5vw;
+}
