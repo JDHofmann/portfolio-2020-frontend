@@ -8,6 +8,7 @@ const About = () => {
                 <span className="line"></span>
                 <span className="box about-box br-tr-br"></span>
                 <p className="about-sub-item">JD is a web developer, musician, and graduate of Flatiron School's software engineering program</p>
+                <span className="vert-line-box"><span></span></span>
                 <img className="biopic" src={biopic}/>
         </li>
     )
