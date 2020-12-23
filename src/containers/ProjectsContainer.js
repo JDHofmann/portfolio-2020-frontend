@@ -20,17 +20,29 @@ class ProjectsContainer extends React.Component{
                     path="/"
                     render={ () => 
                         <li>
-                            <div class="li-project-grid grid">
+                            <div className="li-project-grid grid">
                                 <h2>Projects</h2>
-                                <span class="line"></span>
-                                <span class="box bt-light br-tr"></span>
-                                <a href="project.html" class="sub-item pj"><h3>Tombardier</h3></a>
-                                <span class="box box-item-1-2"></span>
-                                <a class="sub-item sub-item-2 pj"><h3>Bestbey</h3></a>
-                                <span class="box box-item-end br-br"></span>
-                                <a class="sub-item sub-item-3 pj"><h3>Parks</h3></a>
+                                <span className="line"></span>
+                                <span className="box bt-light br-tr"></span>
+                                <NavLink
+                                    to="/tombardier"
+                                    className="sub-item pj"
+                                ><h3>Tombardier</h3>
+                                </NavLink>
+                                <span className="box box-item-1-2"></span>
+                                <NavLink 
+                                    to="/bestbey"
+                                    className="sub-item sub-item-2 pj"
+                                ><h3>Bestbey</h3>
+                                </NavLink>
+                                <span className="box box-item-end br-br"></span>
+                                <NavLink 
+                                    to="/park-planner"
+                                    className="sub-item sub-item-3 pj"
+                                ><h3>Park Planner</h3>
+                                </NavLink>
                             </div>
-            </li>
+                        </li>
                     }
                 />
             </Switch>
