@@ -2,6 +2,8 @@ import React from 'react'
 import { Route, Switch } from 'react-router'
 import { NavLink } from 'react-router-dom'
 import { Tombardier } from '../projects/Tombardier'
+import { Bestbey } from '../projects/Bestbey'
+
 
 class ProjectsContainer extends React.Component{
 
@@ -14,6 +16,12 @@ class ProjectsContainer extends React.Component{
                     path="/tombardier"
                     render={ () => 
                         <Tombardier />
+                    }
+                />
+                <Route 
+                    path="/bestbey"
+                    render={ () => 
+                        <Bestbey />
                     }
                 />
                 <Route 

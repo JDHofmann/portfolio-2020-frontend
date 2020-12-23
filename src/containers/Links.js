@@ -5,7 +5,7 @@ const Links = (props) => {
     return (
         <li>
             <div className="li-project-grid grid">
-                <h2>Links to other places</h2>
+                <h2>Links to more</h2>
                 <span className="line"></span>
                 <span className="box bt-light br-tr"></span>
                 <a 
