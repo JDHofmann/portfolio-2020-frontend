@@ -10,13 +10,14 @@ class App extends React.Component{
   render(){
 
     return (
-      <>
-        <Header />
-        <ProjectsContainer />
-        {/* <span className="section-divider"></span> */}
-        <About />
-        <Footer />
-      </>
+      <main>
+        <ul className="content">
+          <Header />
+          <ProjectsContainer />
+          {/* <About /> */}
+          {/* <Footer /> */}
+        </ul>
+      </main>
     )
   }
 }
