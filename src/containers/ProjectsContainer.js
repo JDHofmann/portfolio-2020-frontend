@@ -2,6 +2,8 @@ import React from 'react'
 import { Route, Switch } from 'react-router'
 import { NavLink } from 'react-router-dom'
 import { Tombardier } from '../projects/Tombardier'
+import { Bestbey } from '../projects/Bestbey'
+
 
 class ProjectsContainer extends React.Component{
 
@@ -17,20 +19,38 @@ class ProjectsContainer extends React.Component{
                     }
                 />
                 <Route 
+                    path="/bestbey"
+                    render={ () => 
+                        <Bestbey />
+                    }
+                />
+                <Route 
                     path="/"
                     render={ () => 
-                        <main id="main" className="main content">
-                        <h2>Projects</h2>
-                        <div className="tom">
-
-                        <NavLink
-                            to="/tombardier"
-                        >
-                            <h3>Tombardier</h3>
-                            <p>Web portfolio building made simple</p>
-                        </NavLink>
-                        </div>
-                        </main> 
+                        <li>
+                            <div className="li-project-grid grid">
+                                <h2>Projects</h2>
+                                <span className="line"></span>
+                                <span className="box bt-light br-tr"></span>
+                                <NavLink
+                                    to="/tombardier"
+                                    className="sub-item pj"
+                                ><h3>Tombardier</h3>
+                                </NavLink>
+                                <span className="box box-item-1-2"></span>
+                                <NavLink 
+                                    to="/bestbey"
+                                    className="sub-item sub-item-2 pj"
+                                ><h3>Bestbey</h3>
+                                </NavLink>
+                                <span className="box box-item-end br-br"></span>
+                                <NavLink 
+                                    to="/park-planner"
+                                    className="sub-item sub-item-3 pj"
+                                ><h3>Park Planner</h3>
+                                </NavLink>
+                            </div>
+                        </li>
                     }
                 />
             </Switch>

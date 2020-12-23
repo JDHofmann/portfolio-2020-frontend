@@ -1,14 +1,16 @@
 import React from 'react'
-import biopic from '../bio-pic-small.jpeg'
+import biopic from '../images/bio-pic-small-cropped.jpg'
 
 const About = () => {
     return (
-        <div className="content about column-grid">
-            <h2>About</h2>
-            <img className="bio-pic" src={biopic}/>
-            <p>I am a web developer who loves creating things from scratch and bringing them to life. User experience is important to me, so I strive to optimize products’ functionality, while crafting the most meaningful and effective environment possible. I believe that things should not only look beautiful on the outside, but also function beautifully under the hood as well.</p>            
-
-        </div>
+        <li className="li-about-grid grid">
+                <h2>About</h2>
+                <span className="line"></span>
+                <span className="box about-box br-tr-br"></span>
+                <p className="about-sub-item">JD is a web developer, musician, and graduate of Flatiron School's software engineering program</p>
+                <span className="vert-line-box"><span></span></span>
+                <img className="biopic" src={biopic}/>
+        </li>
     )
 }
 export default About
