@@ -7,6 +7,7 @@ import { Tombardier } from './projects/Tombardier'
 import { Bestbey } from './projects/Bestbey'
 import Links from './containers/Links';
 import About from './containers/About'
+import { StarWars } from './projects/StarWars';
 
 
 
@@ -41,6 +42,12 @@ class App extends React.Component{
                     }
                 />
                 <Route 
+                  path="/starwars"
+                  render={ () => 
+                    <StarWars />
+                  }
+                />
+                <Route 
                     path="/"
                     render={ () => 
                         <>
@@ -62,9 +69,9 @@ class App extends React.Component{
                                 </NavLink>
                                 <span className="box box-item-end br-br"></span>
                                 <NavLink 
-                                    to="/park-planner"
+                                    to="/starwars"
                                     className="sub-item sub-item-3 pj"
-                                ><h3>Park Planner</h3>
+                                ><h3>Star Wars Quiz</h3>
                                 </NavLink>
                             </div>
                         </li>

@@ -140,6 +140,13 @@ a:hover, a:focus {
   border-bottom: 1px solid;
   grid-row: 4/6;
 }
+
+.box-item-1-end {
+  border-top: 1px solid;
+  /* border-bottom: 1px solid; */
+  grid-row: 4/6;
+}
+
 .box-item-end {
   border-top: 1px solid;
   grid-row: 6/8;
