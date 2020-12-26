@@ -28,7 +28,7 @@ export const Tombardier = () => {
                     className="subtitle"
                 >Portfolio Building Made Simple</p>
                 <span className="box box-item-1-2-end br-br"></span>
-                <p className="description-sub-item">Tombardier comes out of the box ready to provide users with their own personal portfolio site. With an inline editable UI, users can edit content right in their browsers.</p>
+                <p className="description-sub-item">Tombardier comes out of the box ready to provide users with their own personal portfolio site. With an inline editable UI, users can edit content right in their browsers.Built with React, Redux, and Ruby on Rails</p>
             </div>
         </li>
             {/* <Slider 
