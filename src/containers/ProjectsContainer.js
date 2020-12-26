@@ -3,10 +3,19 @@ import { Route, Switch } from 'react-router'
 import { NavLink } from 'react-router-dom'
 import { Tombardier } from '../projects/Tombardier'
 import { Bestbey } from '../projects/Bestbey'
+import Links from './Links';
 
 
 class ProjectsContainer extends React.Component{
 
+    links = [
+        {linkUrl: "https://github.com/JDHofmann",
+        linkText: "Github"},
+        {linkUrl: "https://jdbrewerhofmann.medium.com",
+        linkText: "Medium"},
+        {linkUrl: "mailto:jdbrewerhofmann@gmail.com",
+        linkText: "jdbrewerhofmann@gmail.com"}
+    ]
 
     render(){
         return(
@@ -27,6 +36,7 @@ class ProjectsContainer extends React.Component{
                 <Route 
                     path="/"
                     render={ () => 
+                        <>
                         <li>
                             <div className="li-project-grid grid">
                                 <h2>Projects</h2>
@@ -51,6 +61,9 @@ class ProjectsContainer extends React.Component{
                                 </NavLink>
                             </div>
                         </li>
+                        <Links links={this.links}/>
+
+                        </>
                     }
                 />
             </Switch>
