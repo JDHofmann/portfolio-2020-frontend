@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import Links from '../containers/Links'
 
@@ -24,10 +25,13 @@ export const Bestbey = () => {
                     className="subtitle"
                 >E-commerce</p>
                 <span className="box box-item-1-2-end br-br"></span>
-                <p className="description-sub-item">Bestbey is an e-commerce site built in React, with a Ruby on Rails backend</p>
+                <p className="description-sub-item">Bestbey is an e-commerce site utilizing a retail product database, a full user interface, and a customized shopping cart. Built with React and a Ruby on Rails API.</p>
             </div>
         </li>
         <Links links={links}/>
+        <NavLink 
+            className="home-btn"
+            to="/">Home Page</NavLink>
         </>
     )
 }

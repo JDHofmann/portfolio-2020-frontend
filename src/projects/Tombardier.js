@@ -1,5 +1,6 @@
 import React from 'react'
 import Links from '../containers/Links'
+import { NavLink } from 'react-router-dom'
 
 export const Tombardier = () => {
 
@@ -28,6 +29,9 @@ export const Tombardier = () => {
             </div>
         </li>
         <Links links={links}/>
+        <NavLink 
+            className="home-btn"
+            to="/">Home Page</NavLink>
         </>
     )
 }

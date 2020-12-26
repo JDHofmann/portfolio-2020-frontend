@@ -45,7 +45,7 @@ body {
   margin-bottom: 5vh;
 }
 
-h1, h2, h3, .subtitle, .about-sub-item, .description-sub-item, .biopic {
+h1, h2, h3, .subtitle, .about-sub-item, .description-sub-item, .biopic, .home-btn {
   border: 2px solid;
   padding: .4vmin 5vw;
   border-radius: 7.5px;
@@ -74,7 +74,7 @@ h2 {
 }
 
 
-h3, .subtitle {
+h3, .subtitle, .home-btn {
   font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1200 - 320)));
   font-weight: 300;
 }
@@ -87,7 +87,7 @@ a {
   z-index: 10;
 }
 
-a:hover h3, a:focus h3 {
+a:hover h3, a:focus h3, .home-btn:hover, .home-btn:focus {
   transition: .3s;
   margin: 0.75vmin;
   color: #ffc040;

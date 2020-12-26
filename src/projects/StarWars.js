@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import Links from '../containers/Links'
 
@@ -26,6 +27,9 @@ export const StarWars = () => {
             </div>
         </li>
         <Links links={links}/>
+        <NavLink 
+            className="home-btn"
+            to="/">Home Page</NavLink>
         </>
     )
 }
