@@ -1,11 +1,8 @@
 import React from 'react'
-// import Slider from './Slider'
 
 import Links from '../containers/Links'
 
 export const Bestbey = () => {
-
-    // const images = [tom01, zen];
 
     const links = [
         {linkUrl: "https://bestbey.netlify.app/",
@@ -30,9 +27,6 @@ export const Bestbey = () => {
                 <p className="description-sub-item">Bestbey is an e-commerce site built in React, with a Ruby on Rails backend</p>
             </div>
         </li>
-            {/* <Slider 
-                images={images}
-            /> */}
         <Links links={links}/>
         </>
     )
