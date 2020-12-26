@@ -16,7 +16,6 @@ class App extends React.Component{
         <ul className="content">
           <Header />
           <ProjectsContainer />
-          {/* <Links links={this.links}/> */}
           <About />
           {/* <Footer /> */}
         </ul>
