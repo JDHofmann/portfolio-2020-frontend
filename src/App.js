@@ -7,7 +7,6 @@ import { Tombardier } from './projects/Tombardier'
 import { Bestbey } from './projects/Bestbey'
 import Links from './containers/Links';
 import About from './containers/About'
-import Footer from './containers/Footer';
 
 
 
@@ -76,7 +75,6 @@ class App extends React.Component{
                     }
                 />
             </Switch>
-          {/* <Footer /> */}
         </ul>
       </main>
     )
