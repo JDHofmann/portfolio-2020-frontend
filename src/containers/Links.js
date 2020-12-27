@@ -15,14 +15,14 @@ const Links = (props) => {
                 <h2>Links to more</h2>
                 <span className="line"></span>
                 <span className="box bt-light br-tr"></span>
-                <a tabIndex="0"
+                <a 
                     className="sub-item"
                     target="_blank"
                     rel="noreferrer" 
                     href={props.links[0].linkUrl} 
                 ><h3>{props.links[0].linkText}</h3></a>
                 <span className={props.links[2]? "box box-item-1-2" : "box box-item-1-end br-br"}></span>
-                <a tabIndex="0"
+                <a 
                     className="sub-item sub-item-2"
                     target="_blank"
                     rel="noreferrer" 
@@ -38,7 +38,7 @@ const Links = (props) => {
                     href={props.links[2].linkUrl}
                 ><h3>{props.links[2].linkText}</h3></a> 
                 </>
-                : console.log("no") }
+                : null}
             </div>
         </li>
     )
