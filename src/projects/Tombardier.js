@@ -31,7 +31,7 @@ export const Tombardier = () => {
         <Links links={links}/>
         <NavLink 
             className="home-btn"
-            to="/">Home Page</NavLink>
+            to="/"><h3>Home Page</h3></NavLink>
         </>
     )
 }

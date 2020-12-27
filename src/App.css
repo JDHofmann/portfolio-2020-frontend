@@ -11,6 +11,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a, span {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: italic;
+  outline: none;
 }
 
 body {
@@ -45,7 +46,7 @@ body {
   margin-bottom: 5vh;
 }
 
-h1, h2, h3, .subtitle, .about-sub-item, .description-sub-item, .biopic, .home-btn {
+h1, h2, h3, .subtitle, .about-sub-item, .description-sub-item, .biopic {
   border: 2px solid;
   padding: .4vmin 5vw;
   border-radius: 7.5px;
@@ -74,9 +75,22 @@ h2 {
 }
 
 
-h3, .subtitle, .home-btn {
+h3, .subtitle {
   font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1200 - 320)));
   font-weight: 300;
+}
+
+.home-btn {
+  width: 50%;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.home-btn:hover, .home-btn:focus{
+  transition: .3s;
+  color: #ffc040;
+  text-decoration: underline;
 }
 
 .subtitle {
@@ -87,7 +101,7 @@ a {
   z-index: 10;
 }
 
-a:hover h3, a:focus h3, .home-btn:hover, .home-btn:focus {
+a:hover h3, a:focus h3  {
   transition: .3s;
   margin: 0.75vmin;
   color: #ffc040;
