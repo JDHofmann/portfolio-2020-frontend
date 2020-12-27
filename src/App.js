@@ -77,7 +77,6 @@ class App extends React.Component{
                         </li>
                         <Links links={this.links}/>
                         <About />
-
                         </>
                     }
                 />
