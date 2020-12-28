@@ -87,7 +87,7 @@ h3, .subtitle {
   margin: 0 auto;
 }
 
-.home-btn:hover, .home-btn:focus{
+.title-wrapper:hover h1, .title-wrapper:focus h1, .home-btn:hover, .home-btn:focus{
   transition: .3s;
   color: #ffc040;
   text-decoration: underline;
