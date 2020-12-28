@@ -6,7 +6,7 @@ export const Tombardier = () => {
 
 
     const links = [
-        {linkUrl: "https://kind-mclean-3c9c2c.netlify.app/index.html",
+        {linkUrl: "https://youtu.be/p_RS2x-V300",
         linkText: "Live Demo"},
         {linkUrl: "https://github.com/JDHofmann/tombardier-frontend-dev",
         linkText: "Frontend Repo"},
