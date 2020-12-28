@@ -17,14 +17,12 @@ const Links = (props) => {
                 <span className="box bt-light br-tr"></span>
                 <a 
                     className="sub-item"
-                    target="_blank"
                     rel="noreferrer" 
                     href={props.links[0].linkUrl} 
                 ><h3>{props.links[0].linkText}</h3></a>
                 <span className={props.links[2]? "box box-item-1-2" : "box box-item-1-end br-br"}></span>
                 <a 
                     className="sub-item sub-item-2"
-                    target="_blank"
                     rel="noreferrer" 
                     href={props.links[1].linkUrl} 
                 ><h3>{props.links[1].linkText}</h3></a>
@@ -33,7 +31,6 @@ const Links = (props) => {
                 <span className="box box-item-end br-br "></span>
                 <a 
                     className="sub-item sub-item-3 email"
-                    target="_blank"
                     rel="noreferrer" 
                     href={props.links[2].linkUrl}
                 ><h3>{props.links[2].linkText}</h3></a> 
