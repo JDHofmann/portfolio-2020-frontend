@@ -1,0 +1,259 @@
+@import './variables';
+
+@mixin fluidText($minPx, $max, $min){
+    font-size: calc(#{$minPx} + (#{$max} - #{$min}) * ((100vw - 320px) / (1200 - 320)));
+}
+
+@mixin border(){
+    border: 2px solid;
+}
+
+@mixin contentWrap(){
+    @include border();
+    padding: .4vmin 5vw;
+    border-radius: 7.5px;
+    overflow-y: hidden;
+}
+
+@mixin subItem(){
+    grid-column: 1/3;
+    grid-row: 3/5;
+    min-width: 50%;
+    justify-self: end;
+    text-align: center;
+}
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a, span {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: $dark;
+    color: $light;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    outline: none;
+}
+body {
+    background: $dark;
+    overflow-x: hidden;
+}
+
+.content {
+    width: 90vw;
+    max-width: 600px;
+    margin: 5vh auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 80% auto 25px;
+    align-items: center;
+}
+
+.li-top-grid {
+    grid-template-rows: repeat(4, minmax(45px, 7.5vmin));
+    margin-bottom: 5vh;
+}
+
+.li-project-grid {
+    grid-template-rows: repeat(9, minmax(35px, 5vh));
+    margin-bottom: 2.5vh;
+}
+
+.li-about-grid {
+    grid-template-rows: repeat(6, minmax(35px, 5vh));
+    margin-bottom: 5vh;
+}
+
+h1 {
+    @include fluidText(24px, 32, 24);
+    @include contentWrap();
+    grid-column: 1/2;
+    grid-row: 1/3;
+    z-index: 5;
+    padding: .75vmin 1vw;
+    margin: 0.75vmin;
+}
+
+.title-wrapper {
+    @include border();
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border-radius: 10px;
+    &:focus, &:hover {        
+        h1 {
+            transition: .3s;
+            color: $highlight;
+            text-decoration: underline;
+        }
+    }
+}
+
+h2 {
+    @include fluidText(20px, 26, 20);
+    @include contentWrap();
+
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+
+h3 {
+    @include fluidText(16px, 20, 16);
+    @include contentWrap();
+    font-weight: 300;
+}
+
+.home-btn {
+    width: 50%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    &:focus, &:hover {
+            transition: .3s;
+            color: $highlight;
+            text-decoration: underline;
+    }
+}
+
+.subtitle {
+    @include fluidText(16px, 20, 16);
+    @include contentWrap();
+    @include subItem();
+    font-weight: 200;
+}
+
+a {
+    z-index: 10;
+    &:hover, &:focus {
+        @include border();
+        border-radius: 10px;
+        transition: .3s;
+        h3 {
+            transition: .3s;
+            margin: 0.75vmin;
+            color: $highlight;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.line {
+    border-top: 2px solid;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.box {
+    @include border();
+    border-left: none;
+    grid-column: 3/4;
+    grid-row: 2/4;
+    height: 100%;
+    z-index: 0;
+}
+
+.about-box {
+    grid-row: 2/5;
+}
+
+.br-tr {
+    border-radius: 0 10px 0 0;
+}
+
+.br-tr-br {
+    border-radius: 0 10px 10px 0;
+}
+
+.br-br {
+    border-radius: 0 0 10px 0;
+}
+
+.bt-light {
+    border-bottom: 1px solid;
+}
+.box-item-1-2 {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    grid-row: 4/6;
+}
+
+.box-item-1-end {
+    border-top: 1px solid;
+    grid-row: 4/6;
+}
+
+.box-item-end {
+    border-top: 1px solid;
+    grid-row: 6/8;
+}
+
+.box-item-1-2-end {
+    border-top: 1px solid;
+    grid-row: 4/7;
+}
+
+.sub-item {
+    @include subItem();
+}
+
+.about-sub-item {
+    @include fluidText(14px, 18, 14);
+    @include contentWrap();
+    @include subItem();
+    grid-row: 3/7;
+    font-weight: 200;
+    padding: .4em;
+    z-index: 5;
+}
+
+.description-sub-item {
+    @include fluidText(14px, 18, 14);
+    @include contentWrap();
+    @include subItem();
+    grid-row: 6/8;
+    font-weight: 200;
+    padding: .4em;
+}
+
+.sub-item-2 {
+    grid-row: 5/7;
+}
+
+.sub-item-3 {
+    grid-row: 7/9;
+}
+
+.vert-line-box {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+
+.vert-line-box {
+    span {
+        display: block;
+        background: $light;
+        width: 2px;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
+
+.biopic {
+    @include contentWrap();
+    grid-column: 1/3;
+    padding: .4vmin;
+    width: 35%;
+    min-width: 150px;
+    max-width: 250px;
+    margin: 0 auto;
+}
