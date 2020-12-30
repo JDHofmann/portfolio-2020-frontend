@@ -1,8 +1,8 @@
 @import './variables';
 
-// @mixin fluidText(min, max){
-//     font-size: calc(24px + (32 - 24) * ((100vw - 320px) / (1200 - 320)));
-// }
+@mixin fluidText($minPx, $max, $min){
+    font-size: calc(#{$minPx} + (#{$max} - #{$min}) * ((100vw - 320px) / (1200 - 320)));
+}
 
 @mixin border(){
     border: 2px solid;
@@ -68,7 +68,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a, span {
   }
   
   h1 {
-    font-size: calc(24px + (32 - 24) * ((100vw - 320px) / (1200 - 320)));
+    @include fluidText(24px, 32, 24);
     z-index: 5;
     padding: .75vmin 1vw;
     margin: 0.75vmin;
@@ -87,12 +87,12 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a, span {
 }
 
 h2 {
-    font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (1200 - 320)));
+    @include fluidText(20px, 26, 20);
 }
 
 
 h3, .subtitle {
-    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1200 - 320)));
+    @include fluidText(16px, 20, 16);
     font-weight: 300;
 }
 
@@ -193,16 +193,16 @@ a {
 }
 
 .about-sub-item {
+    @include fluidText(14px, 18, 14);
     grid-row: 3/7;
-    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1200 - 320)));
     font-weight: 200;
     padding: .4em;
     z-index: 5;
 }
 
 .description-sub-item {
+    @include fluidText(14px, 18, 14);
     grid-row: 6/8;
-    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1200 - 320)));
     font-weight: 200;
     padding: .4em;
 }
