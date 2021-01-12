@@ -7,7 +7,7 @@ const About = () => {
                 <h2>About</h2>
                 <span className="line"></span>
                 <span className="box about-box br-tr-br"></span>
-                <p className="about-sub-item">JD is a web developer, musician, and graduate of Flatiron School's software engineering program</p>
+                <p className="about-sub-item">I am web developer, musician, and graduate of Flatiron School's software engineering program. I enjoy building inclusive systems, and filling my apartment with plants</p>
                 <span className="vert-line-box"><span></span></span>
                 <img alt="" className="biopic" src={biopic}/>
         </li>

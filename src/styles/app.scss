@@ -211,7 +211,7 @@ a {
 }
 
 .about-sub-item {
-    @include fluidText(14px, 18, 14);
+    @include fluidText(15px, 18, 15);
     @include contentWrap();
     @include subItem();
     grid-row: 3/7;
@@ -221,7 +221,7 @@ a {
 }
 
 .description-sub-item {
-    @include fluidText(14px, 18, 14);
+    @include fluidText(15px, 18, 15);
     @include contentWrap();
     @include subItem();
     grid-row: 6/8;

@@ -264,7 +264,7 @@ a:hover h3, a:focus h3 {
 }
 
 .about-sub-item {
-  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1200 - 320)));
+  font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1200 - 320)));
   border: 2px solid;
   padding: .4vmin 5vw;
   border-radius: 7.5px;
@@ -288,7 +288,7 @@ a:hover h3, a:focus h3 {
 }
 
 .description-sub-item {
-  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1200 - 320)));
+  font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1200 - 320)));
   border: 2px solid;
   padding: .4vmin 5vw;
   border-radius: 7.5px;

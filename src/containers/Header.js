@@ -20,7 +20,7 @@ const Header = () => {
                 <span className="line"></span>
                 <span className="box br-tr-br"></span>
                 <p className="subtitle"
-                >Web Developer</p>                
+                >Full Stack Web Developer & inclusive UX/UI enthusiast.</p>                
             </li>
 
     )

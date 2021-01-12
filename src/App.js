@@ -27,7 +27,7 @@ class App extends React.Component{
     return (
       <main>
         <ul className="content">
-          <Header />
+          {/* <Header /> */}
           <Switch>
                 <Route 
                     path="/tombardier"
@@ -51,9 +51,10 @@ class App extends React.Component{
                     path="/"
                     render={ () => 
                         <>
+                        <Header />
                         <li>
                             <div className="li-project-grid grid">
-                                <h2>Projects</h2>
+                                <h2>Featured Projects</h2>
                                 <span className="line"></span>
                                 <span className="box bt-light br-tr"></span>
                                 <NavLink
