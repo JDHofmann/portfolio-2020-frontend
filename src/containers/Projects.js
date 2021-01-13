@@ -16,26 +16,10 @@ const Projects = () => {
         }
     }
 
-    // const renderRow = (pj) => {
-    //     switch (){
-    //         case 0:
-    //             return "{ gridRow: '3/5'}"
-    //         break
-    //        default:
-    //             return "{ gridRow: '5/7'}"
-    //             break
-    //         // default:
-    //         //     let row = projects.indexOf(pj)*2
-    //         //     return `${row + 3}/${row + 5}`
-    //     }
-    // }
-
     const renderProjectLinks = () => {
         return projects.map( pj =>  
             <>
             <NavLink
-                // style={renderRow(pj)}
-                // style={{ gridRow: '3/5'}}
                 key={pj.title}
                 to={pj.path}
                 className={`sub-item row-${projects.indexOf(pj)}`}
@@ -53,9 +37,6 @@ const Projects = () => {
                     <span className="line"></span>
                     <span className="box bt-light br-tr"></span>
                     {renderProjectLinks()}
-                    {/* <span className="box box-item-1-2"></span> */}
-
-                    {/*  */}
                 </div>
             </li>
     )
