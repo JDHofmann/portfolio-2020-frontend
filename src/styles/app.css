@@ -71,13 +71,6 @@ h1 {
   border-radius: 10px;
 }
 
-.title-wrapper:focus h1, .title-wrapper:hover h1 {
-  -webkit-transition: .3s;
-  transition: .3s;
-  color: #ffc040;
-  text-decoration: underline;
-}
-
 .pho-title-wrapper {
   border: 1px solid;
   -ms-grid-column: 1;
@@ -89,7 +82,7 @@ h1 {
   border-radius: 10px;
 }
 
-h2 {
+h2, .pj-title {
   font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (1200 - 320)));
   border: 1px solid;
   padding: .4vmin 5vw;
@@ -175,7 +168,7 @@ a:hover h3, a:focus h3 {
 }
 
 .pad {
-  padding: .4vmin 5vw;
+  padding: .4vmin 2.5vw;
 }
 
 .wrap {

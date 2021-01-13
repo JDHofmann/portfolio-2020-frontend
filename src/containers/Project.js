@@ -15,7 +15,7 @@ const Project = (props) => {
                 style={grid}
                 className="grid"
             >
-                <h2>{props.project.title}</h2>
+                <h1 className="pj-title">{props.project.title}</h1>
                 <span className="line"></span>
                 <span className="path path-0"></span>
                 <p 

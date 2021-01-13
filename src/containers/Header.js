@@ -13,16 +13,14 @@ const Header = () => {
             style={grid}
             className="grid"
         >
-            <NavLink
-                title="home page"
-                to="/"
+            <div
                 className="title-wrapper"
             >
                 <h1>JD Brewer-Hofmann</h1>
-            </NavLink>
+            </div>
             <span className="line"></span>
             <span className="path path-begin-end"></span>
-            <p className="row-0 sub-item"
+            <p className="row-0 sub-item pad"
             >Full Stack Web Developer & Inclusive UX/UI Enthusiast</p>                
         </li>
 
