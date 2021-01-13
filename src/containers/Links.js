@@ -10,24 +10,22 @@ const Links = (props) => {
 
     const renderSpan = (l) => {
         let i = props.links.indexOf(l);
-        if( i === props.links.length -1) return
-        
-        else if(i === props.links.length-2){
-            return <span className="box box-item-end br-br"></span>
+        if( i === props.links.length - 1){
+            return <span className={`path path-end path-${i} br-br`}></span>
         } else {
-            return <span className={`box box-${i}`}></span>
+            return <span className={`path path-${i}`}></span>
         }
     }
 
     const renderLinks = () => {
         return props.links.map( l =>  
             <>
+            {renderSpan(l)}
             <a 
                 className={`sub-item row-${props.links.indexOf(l)}`}
                 rel="noreferrer" 
                 href={l.linkUrl} 
             ><h3>{l.linkText}</h3></a>
-            {renderSpan(l)}
             </>
         )
     }

@@ -374,4 +374,50 @@ a:hover h3, a:focus h3 {
   -ms-grid-row-span: 2;
   grid-row: 11/13;
 }
+
+.path {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  height: 100%;
+  z-index: 0;
+  border-top: 2px solid;
+  border-right: 2px solid;
+}
+
+.path-0 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  border-radius: 0 10px 0 0;
+}
+
+.path-1 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+}
+
+.path-2 {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  grid-row: 6/8;
+}
+
+.path-3 {
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 2;
+  grid-row: 8/10;
+}
+
+.path-4 {
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 2;
+  grid-row: 10/12;
+}
+
+.path-end {
+  border-radius: 0 0 10px 0;
+  border-bottom: 2px solid;
+}
 /*# sourceMappingURL=app.css.map */
