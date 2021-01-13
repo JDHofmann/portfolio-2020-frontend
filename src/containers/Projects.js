@@ -4,6 +4,12 @@ import { projects } from '../store.js'
 
 const Projects = () => {
 
+    const gridLength = projects.length + 1
+
+    const grid = {
+        gridTemplateRows: `repeat(${gridLength}, minmax(35px, 5vh) minmax(35px, auto) )`,
+        marginBottom: "2.5vh",
+    }
 
     const renderSpan = (pj) => {
         let i = projects.indexOf(pj);
@@ -32,7 +38,9 @@ const Projects = () => {
 
     return (
             <li>
-                <div className="li-project-grid grid">
+                <div 
+                    style={grid}
+                    className="grid">
                     <h2>Featured Projects</h2>
                     <span className="line"></span>
                     <span className="box bt-light br-tr"></span>
