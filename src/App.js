@@ -2,13 +2,11 @@ import './styles/app.css';
 import React from 'react'
 import { Route, Switch } from 'react-router'
 import Header from './containers/Header';
-import { Tombardier } from './projects/Tombardier'
-import { Bestbey } from './projects/Bestbey'
-import { StarWars } from './projects/StarWars';
-import Links from './containers/Links';
-import About from './containers/About'
+import Project from './containers/Project';
 import Projects from './containers/Projects';
-
+import { projects } from './store.js'
+import About from './containers/About'
+import Links from './containers/Links';
 
 
 class App extends React.Component{
@@ -31,19 +29,19 @@ class App extends React.Component{
                 <Route 
                     path="/tombardier"
                     render={ () => 
-                        <Tombardier />
+                      <Project project={projects[0]}/>
                     }
                 />
                 <Route 
                     path="/bestbey"
                     render={ () => 
-                        <Bestbey />
+                      <Project project={projects[1]}/>
                     }
                 />
                 <Route 
                   path="/starwars"
                   render={ () => 
-                    <StarWars />
+                    <Project project={projects[2]}/>
                   }
                 />
                 <Route 

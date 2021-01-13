@@ -22,7 +22,7 @@ const Header = () => {
             </NavLink>
             <span className="line"></span>
             <span className="path path-begin-end"></span>
-            <p className="subtitle"
+            <p className="row-0 sub-item"
             >Full Stack Web Developer & inclusive UX/UI enthusiast</p>                
         </li>
 
