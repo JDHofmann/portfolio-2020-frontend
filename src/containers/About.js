@@ -14,7 +14,7 @@ const About = () => {
                 <h2>About</h2>
                 <span className="line"></span>
                 <span className="path path-begin-end"></span>
-                <p className="sub-item row-0">I am web developer, musician, and graduate of Flatiron School's software engineering program. I enjoy building inclusive systems and filling my apartment with plants</p>
+                <p className="sub-item row-0">I am a web developer, musician, and graduate of Flatiron School's software engineering program. I enjoy building inclusive systems and filling my apartment with plants.</p>
                 <span className="vert-line-box"><span></span></span>
                 <img alt="" className="sub-item  biopic" src={biopic}/>
         </li>

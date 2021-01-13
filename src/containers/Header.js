@@ -23,7 +23,7 @@ const Header = () => {
             <span className="line"></span>
             <span className="path path-begin-end"></span>
             <p className="row-0 sub-item"
-            >Full Stack Web Developer & inclusive UX/UI enthusiast</p>                
+            >Full Stack Web Developer & Inclusive UX/UI Enthusiast</p>                
         </li>
 
     )

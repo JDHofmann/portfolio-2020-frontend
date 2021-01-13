@@ -164,7 +164,7 @@ a:hover h3, a:focus h3 {
 }
 
 .line {
-  border-top: 2px solid;
+  border-top: 1px solid;
   height: 100%;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -183,6 +183,10 @@ a:hover h3, a:focus h3 {
   padding: .4vmin 5vw;
   border-radius: 7.5px;
   overflow-y: hidden;
+}
+
+.mg-top {
+  margin-top: 2.5vh;
 }
 
 .sub-item {
@@ -212,7 +216,7 @@ a:hover h3, a:focus h3 {
 .vert-line-box span {
   display: block;
   background: #ffffff;
-  width: 2px;
+  width: 1px;
   height: 100%;
   margin: 0 auto;
 }
@@ -273,8 +277,8 @@ a:hover h3, a:focus h3 {
   grid-column: 3/4;
   height: 100%;
   z-index: 0;
-  border-top: 2px solid;
-  border-right: 2px solid;
+  border-top: 1px solid;
+  border-right: 1px solid;
 }
 
 .path-0 {
@@ -310,14 +314,14 @@ a:hover h3, a:focus h3 {
 
 .path-end {
   border-radius: 0 0 10px 0;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
 }
 
 .path-begin-end {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2/4;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
   border-radius: 0 10px 10px 0;
 }
 /*# sourceMappingURL=app.css.map */

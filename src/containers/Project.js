@@ -22,7 +22,7 @@ const Project = (props) => {
                     className="sub-item row-0 pad"
                 >{props.project.description}</p>
                 <span className="path path-1 path-end"></span>
-                <p className="sub-item row-1 pad">{props.project.subtitle}</p>
+                <p className="sub-item row-1 pad mg-top">{props.project.lesson}</p>
             </div>
         </li>
         <Links links={props.project.links}/>
