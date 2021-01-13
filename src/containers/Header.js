@@ -2,26 +2,27 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {
-    // console.log(window.location.pathname)
+
+    const grid = {
+        gridTemplateRows: "repeat(4, minmax(45px, 7.5vmin))",
+        marginBottom: "5vh"
+    }
+
     return (
-        <li className="li-top-grid grid">
-            {window.location.pathname==="/" ? <div className="pho-title-wrapper">
+        <li 
+            style={grid}
+            className="grid"
+        >
+            <div
+                className="title-wrapper"
+            >
                 <h1>JD Brewer-Hofmann</h1>
             </div>
-            : 
-                <NavLink
-                    title="home page"
-                    to="/"
-                    className="title-wrapper"
-                >
-                    <h1>JD Brewer-Hofmann</h1>
-                </NavLink>
-            }
-                <span className="line"></span>
-                <span className="box br-tr-br"></span>
-                <p className="subtitle"
-                >Full Stack Web Developer & inclusive UX/UI enthusiast.</p>                
-            </li>
+            <span className="line"></span>
+            <span className="path path-begin-end"></span>
+            <p className="row-0 sub-item pad"
+            >Full Stack Web Developer & Inclusive UX/UI Enthusiast</p>                
+        </li>
 
     )
 }

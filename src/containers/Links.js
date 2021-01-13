@@ -1,41 +1,45 @@
 import React from 'react'
 
-
-
 const Links = (props) => {
-    // console.log(props.links)
-    // const renderLinks = () => {
-    //     return props.links.map( link => <>
-        
-    //     </> )
-    // }
+
+    const gridLength = props.links.length + 1
+
+    const grid = {
+        gridTemplateRows: `repeat(${gridLength}, minmax(35px, 5vh) minmax(35px, auto) )`
+    }
+
+    const renderSpan = (l) => {
+        let i = props.links.indexOf(l);
+        if( i === props.links.length - 1){
+            return <span className={`path path-end path-${i} br-br`}></span>
+        } else {
+            return <span className={`path path-${i}`}></span>
+        }
+    }
+
+    const renderLinks = () => {
+        return props.links.map( l =>  
+            <>
+            {renderSpan(l)}
+            <a 
+                className={`sub-item row-${props.links.indexOf(l)}`}
+                rel="noreferrer" 
+                href={l.linkUrl} 
+            ><h3>{l.linkText}</h3></a>
+            </>
+        )
+    }
+
     return (
         <li>
-            <div className="li-project-grid grid">
+            <div 
+                style={grid}
+                className="grid"
+            >
                 <h2>Links to more</h2>
                 <span className="line"></span>
                 <span className="box bt-light br-tr"></span>
-                <a 
-                    className="sub-item"
-                    rel="noreferrer" 
-                    href={props.links[0].linkUrl} 
-                ><h3>{props.links[0].linkText}</h3></a>
-                <span className={props.links[2]? "box box-item-1-2" : "box box-item-1-end br-br"}></span>
-                <a 
-                    className="sub-item sub-item-2"
-                    rel="noreferrer" 
-                    href={props.links[1].linkUrl} 
-                ><h3>{props.links[1].linkText}</h3></a>
-                { props.links[2]? 
-                <>
-                <span className="box box-item-end br-br "></span>
-                <a 
-                    className="sub-item sub-item-3 email"
-                    rel="noreferrer" 
-                    href={props.links[2].linkUrl}
-                ><h3>{props.links[2].linkText}</h3></a> 
-                </>
-                : null}
+                {renderLinks()}
             </div>
         </li>
     )
