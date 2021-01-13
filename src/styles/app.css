@@ -36,12 +36,6 @@ body {
           align-items: center;
 }
 
-.li-top-grid {
-  -ms-grid-rows: (minmax(45px, 7.5vmin))[4];
-      grid-template-rows: repeat(4, minmax(45px, 7.5vmin));
-  margin-bottom: 5vh;
-}
-
 .li-project-grid {
   -ms-grid-rows: (minmax(35px, 5vh))[9];
       grid-template-rows: repeat(9, minmax(35px, 5vh));
@@ -221,7 +215,7 @@ a:hover h3, a:focus h3 {
   border-bottom: 1px solid;
 }
 
-.box-item-1-2 {
+.box-0 {
   border-top: 1px solid;
   border-bottom: 1px solid;
   -ms-grid-row: 4;
@@ -354,5 +348,31 @@ a:hover h3, a:focus h3 {
   min-width: 150px;
   max-width: 250px;
   margin: 0 auto;
+}
+
+.pj {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.row-0 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+}
+
+.row-1 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  grid-row: 5/7;
+}
+
+.row-2 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  grid-row: 7/9;
 }
 /*# sourceMappingURL=app.css.map */
