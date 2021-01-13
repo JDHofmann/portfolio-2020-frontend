@@ -14,18 +14,25 @@ export const Tombardier = () => {
         linkText: "Backend Repo"}
     ]
 
+    const grid = {
+        gridTemplateRows: `repeat(4, minmax(35px, 5vh) minmax(35px, auto) )`
+    }
+
     return ( 
         <>  
         <li>
-            <div className="li-project-grid grid">
+            <div 
+                style={grid}
+                className="grid"
+            >
                 <h2>Tombardier CMS</h2>
                 <span className="line"></span>
-                <span className="box bt-light br-tr"></span>
+                <span className="path path-0"></span>
                 <p 
-                    className="subtitle"
+                    className="sub-item row-0 pad"
                 >Portfolio Building Made Simple</p>
-                <span className="box box-item-1-2-end br-br"></span>
-                <p className="description-sub-item">Tombardier comes out of the box ready to provide users with their own personal portfolio site. With an inline editable UI, users can edit content right in their browsers. Built with React, Redux, Ruby on Rails, Active Storage, and AWS cloud storage.</p>
+                <span className="path path-1 path-end"></span>
+                <p className="sub-item row-1 pad">Tombardier comes out of the box ready to provide users with their own personal portfolio site. With an inline editable UI, users can edit content right in their browsers. Built with React, Redux, Ruby on Rails, Active Storage, and AWS cloud storage.</p>
             </div>
         </li>
         <Links links={links}/>

@@ -21,9 +21,9 @@ const Header = () => {
                 <h1>JD Brewer-Hofmann</h1>
             </NavLink>
             <span className="line"></span>
-            <span className="box br-tr-br"></span>
+            <span className="path path-begin-end"></span>
             <p className="subtitle"
-            >Full Stack Web Developer & inclusive UX/UI enthusiast.</p>                
+            >Full Stack Web Developer & inclusive UX/UI enthusiast</p>                
         </li>
 
     )

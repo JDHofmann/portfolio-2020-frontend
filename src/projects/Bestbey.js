@@ -13,10 +13,17 @@ export const Bestbey = () => {
         linkText: "Backend Repo"}
     ]
 
+    const grid = {
+        gridTemplateRows: `repeat(4, minmax(35px, 5vh) minmax(35px, auto) )`
+    }
+
     return ( 
         <>  
         <li>
-            <div className="li-project-grid grid">
+            <div 
+                style={grid}
+                className="grid"
+            >
                 <h2>Bestbey</h2>
                 <span className="line"></span>
                 <span className="box bt-light br-tr"></span>
