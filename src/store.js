@@ -10,7 +10,9 @@ export const projects = [
             {linkUrl: "https://github.com/JDHofmann/tombardier-frontend-dev",
             linkText: "Frontend Repo"},
             {linkUrl: "https://github.com/JDHofmann/tombardier-backend-dev",
-            linkText: "Backend Repo"}
+            linkText: "Backend Repo"},
+            {linkUrl: "https://www.youtube.com/watch?v=p_RS2x-V300",
+            linkText: "Youtube Demo"}
         ]
     },
     {
