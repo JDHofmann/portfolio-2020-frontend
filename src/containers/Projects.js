@@ -12,40 +12,37 @@ const Projects = () => {
 
     const renderSpan = (pj) => {
         let i = projects.indexOf(pj);
-        if( i === projects.length -1) return
-        
-        else if(i === projects.length-2){
-            return <span className="box box-item-end br-br"></span>
+        if( i === projects.length - 1){
+            return <span className={`path path-end path-${i} br-br`}></span>
         } else {
-            return <span className={`box box-${i}`}></span>
+            return <span className={`path path-${i}`}></span>
         }
     }
 
     const renderProjectLinks = () => {
         return projects.map( pj =>  
             <>
+            {renderSpan(pj)}
             <NavLink
                 key={pj.title}
                 to={pj.path}
                 className={`sub-item row-${projects.indexOf(pj)}`}
             ><h3>{pj.title}</h3>
             </NavLink>
-            {renderSpan(pj)}
             </>
         )
     }
 
     return (
-            <li>
-                <div 
-                    style={grid}
-                    className="grid">
-                    <h2>Featured Projects</h2>
-                    <span className="line"></span>
-                    <span className="box bt-light br-tr"></span>
-                    {renderProjectLinks()}
-                </div>
-            </li>
+        <li>
+            <div 
+                style={grid}
+                className="grid">
+                <h2>Featured Projects</h2>
+                <span className="line"></span>
+                {renderProjectLinks()}
+            </div>
+        </li>
     )
 }
 
