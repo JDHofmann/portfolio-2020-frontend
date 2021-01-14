@@ -20,7 +20,7 @@ const Projects = () => {
     }
 
     const renderProjectLinks = () => {
-        return projects.map( pj =>  
+        return projects.map( pj => 
             <>
             {renderSpan(pj)}
             <NavLink
