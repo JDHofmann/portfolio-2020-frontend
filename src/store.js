@@ -4,6 +4,7 @@ export const projects = [
         title : "Tombardier",
         lesson: "Initially I had a lot of difficulty implementing active storage and cloud storage into Tombardier. My solution was to deconstruct each of Tombardier's functionalities into it's own application. From there, I combined functionalities one at a time until I achieved my MVP.",
         description: "Tombardier comes out of the box ready to provide users with their own personal portfolio site. With an inline editable UI, users can edit content right in their browsers. Built with React, Redux, Ruby on Rails, Active Storage, and AWS cloud storage.",
+        gif: '/images/Tombardier.gif',
         links : [
             {linkUrl: "https://tombardier.netlify.app/",
             linkText: "Live Demo"},

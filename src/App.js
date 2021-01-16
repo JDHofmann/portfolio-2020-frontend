@@ -5,7 +5,7 @@ import Header from './containers/Header';
 import Project from './containers/Project';
 import Projects from './containers/Projects';
 import { projects } from './store.js'
-import About from './containers/About'
+// import About from './containers/About'
 import Links from './containers/Links';
 
 

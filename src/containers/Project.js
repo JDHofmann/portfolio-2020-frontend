@@ -26,7 +26,10 @@ const Project = ({project}) => {
                 <p className="sub-item row-1 pad mg-top">{project.lesson}</p>
             </div>
         </li>
-        <img src={process.env.PUBLIC_URL + '/images/Tombardier.gif'}></img>
+        { project.gif ? 
+        <img className="gif" src={process.env.PUBLIC_URL + project.gif}></img>
+        : null
+         }
         <Links links={project.links}/>
         <NavLink 
             className="home-btn"

@@ -1,6 +1,4 @@
 import React from 'react'
-// import biopic from '../images/bio-pic-small-cropped.jpg'
-
 
 const Header = () => {
 

@@ -189,6 +189,18 @@ a {
     justify-self: end;
 }
 
+.gif {
+    @include contentWrap();
+    // grid-column: 1/3;
+    // grid-row: 6/8;
+    padding: .4vmin;
+    width: 50%;
+    min-width: 200px;
+    max-width: 350px;
+    margin: 0 auto;
+    justify-self: end;
+}
+
 // grid row assignments
 
 .row-0 {
