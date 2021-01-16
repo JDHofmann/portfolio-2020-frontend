@@ -1,5 +1,5 @@
 import React from 'react'
-import biopic from '../images/bio-pic-small-cropped.jpg'
+// import biopic from '../images/bio-pic-small-cropped.jpg'
 
 
 const Header = () => {
@@ -23,7 +23,7 @@ const Header = () => {
             <span className="path path-begin-end"></span>
             <p className="sub-item row-0">I am full stack web developer, inclusive UX/UI enthusiast, musician, and graduate of Flatiron School's software engineering program. I enjoy building inclusive systems and filling my apartment with plants.</p>
                 <span className="vert-line-box"><span></span></span>
-                <img alt="" className="sub-item  biopic" src={biopic}/>                
+                <img alt="" className="sub-item  biopic" src={process.env.PUBLIC_URL + '/images/bio-pic-small-cropped.jpg'}/>                
         </li>
 
     )

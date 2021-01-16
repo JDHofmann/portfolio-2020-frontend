@@ -1,6 +1,7 @@
 import React from 'react'
 import Links from '../containers/Links'
 import { NavLink } from 'react-router-dom'
+import tom_gif from '../images/Tombardier.gif'
 
 const Project = ({project}) => {
 
@@ -25,6 +26,7 @@ const Project = ({project}) => {
                 <p className="sub-item row-1 pad mg-top">{project.lesson}</p>
             </div>
         </li>
+        <img src={process.env.PUBLIC_URL + '/images/Tombardier.gif'}></img>
         <Links links={project.links}/>
         <NavLink 
             className="home-btn"
