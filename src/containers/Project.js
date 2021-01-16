@@ -1,7 +1,6 @@
 import React from 'react'
 import Links from '../containers/Links'
 import { NavLink } from 'react-router-dom'
-// import tom_gif from '../images/Tombardier.gif'
 
 const Project = ({project}) => {
 
@@ -27,7 +26,7 @@ const Project = ({project}) => {
             </div>
         </li>
         { project.gif ? 
-        <img className="gif" src={process.env.PUBLIC_URL + project.gif}></img>
+        <img alt="" className="gif" src={process.env.PUBLIC_URL + project.gif}></img>
         : null
          }
         <Links links={project.links}/>

@@ -22,8 +22,8 @@ export const projects = [
         lesson: "I had a great opportunity to learn about realistic retail product databases while working on this project. Accounting for every possible product option is a bigger undertaking than I anticipated. I developed a real appreciation for an very commonly used database design.",
         description: "Bestbey is an e-commerce site utilizing a retail product database, a full user interface, and a customized shopping cart. Built with React and a Ruby on Rails API.",
         links : [
-            {linkUrl: "https://bestbey.netlify.app/",
-            linkText: "Live Demo"},
+            // {linkUrl: "https://bestbey.netlify.app/",
+            // linkText: "Live Demo"},
             {linkUrl: "https://github.com/JDHofmann/bestbey-frontend",
             linkText: "Frontend Repo"},
             {linkUrl: "https://github.com/JDHofmann/bestbey-backend-v2.1",
