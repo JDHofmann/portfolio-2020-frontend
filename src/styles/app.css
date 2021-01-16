@@ -242,8 +242,8 @@ a:hover h3, a:focus h3 {
   overflow-y: hidden;
   padding: .4vmin;
   width: 50%;
-  min-width: 200px;
-  max-width: 350px;
+  min-width: 250px;
+  max-width: 400px;
   margin: 0 auto;
   -ms-grid-column-align: end;
       justify-self: end;

@@ -35,6 +35,7 @@ export const projects = [
         title : "Star Wars Quiz",
         lesson: "Developing this quiz showed my the true value in designing mobile first. After attempting to work backwards from a design aimed at desktop sizing, I eventually rebuilt my layout from the ground up. I also learned to always have your facts straight when talking about Star Wars.",
         description: "A trivia game that tests your knowledge of Star Wars. The quiz is 10 questions where you can find out if you have what it takes to become a Jedi Master. Built with HTML5, CSS, Javascript, and Jquery.",
+        gif: '/images/starwars.gif',
         links : [
             {linkUrl: "https://jdhofmann.github.io/Star-Wars-Quiz/",
             linkText: "Live Demo"},
