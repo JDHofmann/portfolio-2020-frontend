@@ -51,7 +51,7 @@ class App extends React.Component{
                         <Header />
                         <Projects />
                         <Links links={this.links}/>
-                        <About />
+                        {/* <About /> */}
                         </>
                     }
                 />
