@@ -14,8 +14,8 @@ class App extends React.Component{
   links = [
     {linkUrl: "https://github.com/JDHofmann",
     linkText: "Github"},
-    {linkUrl: "https://jdbrewerhofmann.medium.com",
-    linkText: "Medium"},
+    {linkUrl: "https://dev.to/jdbrewerhofmann",
+    linkText: "Blog"},
     {linkUrl: "mailto:jdbrewerhofmann@gmail.com",
     linkText: "jdbrewerhofmann@gmail.com"}
 ]
