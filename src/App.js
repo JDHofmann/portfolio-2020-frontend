@@ -25,14 +25,14 @@ export default function App()
   const [articles, setArticles] = useState(null)
 
   useEffect( () => {
-    async function fetchData(){
-
-      const result = await fetch(`https://dev.to/api/articles?username=jdbrewerhofmann`)
-      const data = await result.json()
-      setArticles(data)
-    }
     fetchData()
   }, [])
+  
+  const fetchData = async() => {
+    const result = await fetch(`https://dev.to/api/articles?username=jdbrewerhofmann`)
+    const data = await result.json()
+    setArticles(data)
+  }
 
   return (
     <main>
