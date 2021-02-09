@@ -22,12 +22,12 @@ export default function App()
   ]
 
   const [articles, setArticles] = useState(null)
-  const [gridLength, setGridLength] = useState(0)
 
-  useEffect(() => {
-      fetch(`https://dev.to/api/articles?username=jdbrewerhofmann`)
-      .then(resp => resp.json())
-      .then(console.log)
+  useEffect( async () => {
+      const result = await fetch(`https://dev.to/api/articles?username=jdbrewerhofmann`)
+      const data = await result.json()
+      console.log(data)
+      // setArticles(result.data)
   })
 
   return (
