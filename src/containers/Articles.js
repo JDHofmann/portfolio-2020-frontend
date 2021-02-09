@@ -1,17 +1,7 @@
-// import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 
 
 export default function Articles({articles}){
-
-    // const [articles, setArticles] = useState(null)
-    // const [gridLength, setGridLength] = useState(0)
-
-    // useEffect(() => {
-    //     fetch(`https://dev.to/api/articles?username=jdbrewerhofmann`)
-    //     .then(resp => resp.json())
-    //     .then(console.log)
-    // })
 
     const gridLength = () => {
         return articles === null ?  0 : articles.length + 1
@@ -54,8 +44,7 @@ export default function Articles({articles}){
                 <>
                     <span className="line"></span>
                     { renderArticleLinks() }
-                    {console.log(articles)}
-
+                    {/* {console.log(articles)} */}
                 </>
                 }
             </div>
