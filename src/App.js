@@ -7,6 +7,7 @@ import Projects from './containers/Projects';
 import { projects } from './store.js'
 // import About from './containers/About'
 import Links from './containers/Links';
+import Articles from './containers/Articles';
 
 
 class App extends React.Component{
@@ -51,6 +52,7 @@ class App extends React.Component{
                         <Header />
                         <Projects />
                         <Links links={this.links}/>
+                        <Articles />
                         {/* <About /> */}
                         </>
                     }
