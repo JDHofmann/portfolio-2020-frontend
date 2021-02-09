@@ -30,6 +30,8 @@ export default function Articles({articles}){
                 <>
                     <span className="line"></span>
                     {/* render article links here */}
+                    {console.log(articles)}
+
                 </>
                 }
             </div>

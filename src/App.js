@@ -26,9 +26,8 @@ export default function App()
   useEffect( async () => {
       const result = await fetch(`https://dev.to/api/articles?username=jdbrewerhofmann`)
       const data = await result.json()
-      console.log(data)
-      // setArticles(result.data)
-  })
+      setArticles(data)
+  }, [])
 
   return (
     <main>
