@@ -12,7 +12,7 @@ export default function Article(){
       const fetchData = async() => {
         const result = await fetch(`https://dev.to/api/articles/589849`)
         const data = await result.json()
-        setArticles(data)
+        setArticle(data)
       }
 
     const renderArticle = () => {
