@@ -7,6 +7,7 @@ import Projects from './containers/Projects';
 import { projects } from './store.js'
 import Links from './containers/Links';
 import Articles from './containers/Articles';
+import Article from './containers/Article';
 
 
 export default function App()
@@ -33,6 +34,12 @@ export default function App()
     <main>
       <ul className="content">
         <Switch>
+              <Route 
+                  path="/test"
+                  render={ () => 
+                      <Article />
+                  }
+              />
               <Route 
                   path="/tombardier"
                   render={ () => 
