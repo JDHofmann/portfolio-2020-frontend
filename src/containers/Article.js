@@ -5,11 +5,15 @@ export default function Article(){
 
     const [ article, setArticle ] = useState(null)
 
-    useEffect( async () => {
+    useEffect( () => {
+        fetchData()
+      }, [])
+      
+      const fetchData = async() => {
         const result = await fetch(`https://dev.to/api/articles/589849`)
         const data = await result.json()
-        setArticle(data)
-    }, [])
+        setArticles(data)
+      }
 
     const renderArticle = () => {
         return article === null ? <p>loading...</p> :
