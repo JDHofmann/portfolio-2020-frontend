@@ -10,9 +10,10 @@ import Links from './containers/Links';
 import Articles from './containers/Articles';
 
 
-class App extends React.Component{
+export default function App()
+{
 
-  links = [
+  const links = [
     {linkUrl: "https://github.com/JDHofmann",
     linkText: "Github"},
     {linkUrl: "https://dev.to/jdbrewerhofmann",
@@ -21,47 +22,46 @@ class App extends React.Component{
     linkText: "jdbrewerhofmann@gmail.com"}
 ]
 
-  render(){
 
-    return (
-      <main>
-        <ul className="content">
-          <Switch>
-                <Route 
-                    path="/tombardier"
-                    render={ () => 
-                      <Project project={projects[0]}/>
-                    }
-                />
-                <Route 
-                    path="/bestbey"
-                    render={ () => 
-                      <Project project={projects[1]}/>
-                    }
-                />
-                <Route 
-                  path="/starwars"
+
+  return (
+    <main>
+      <ul className="content">
+        <Switch>
+              <Route 
+                  path="/tombardier"
                   render={ () => 
-                    <Project project={projects[2]}/>
+                    <Project project={projects[0]}/>
                   }
-                />
-                <Route 
-                    path="/"
-                    render={ () => 
-                        <>
-                        <Header />
-                        <Projects />
-                        <Links links={this.links}/>
-                        <Articles />
-                        {/* <About /> */}
-                        </>
-                    }
-                />
-            </Switch>
-        </ul>
-      </main>
-    )
-  }
+              />
+              <Route 
+                  path="/bestbey"
+                  render={ () => 
+                    <Project project={projects[1]}/>
+                  }
+              />
+              <Route 
+                path="/starwars"
+                render={ () => 
+                  <Project project={projects[2]}/>
+                }
+              />
+              <Route 
+                  path="/"
+                  render={ () => 
+                      <>
+                      <Header />
+                      <Projects />
+                      <Links links={links}/>
+                      <Articles />
+                      {/* <About /> */}
+                      </>
+                  }
+              />
+          </Switch>
+      </ul>
+    </main>
+  )
 }
 
-export default App;
+
