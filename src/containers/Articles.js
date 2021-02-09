@@ -1,4 +1,5 @@
 // import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom'
 
 
 export default function Articles({articles}){
@@ -20,27 +21,25 @@ export default function Articles({articles}){
         gridTemplateRows: `repeat(${gridLength()}, minmax(35px, 5vh) minmax(35px, auto) )`
     }
 
-    // const renderSpan = (pj) => {
-    //     let i = projects.indexOf(pj);
-    //     if( i === projects.length - 1){
-    //         return <span className={`path path-end path-${i} br-br`}></span>
-    //     } else {
-    //         return <span className={`path path-${i}`}></span>
-    //     }
-    // }
+    const renderSpan = (a) => {
+        let i = articles.indexOf(a);
+        if( i === articles.length - 1){
+            return <span className={`path path-end path-${i} br-br`}></span>
+        } else {
+            return <span className={`path path-${i}`}></span>
+        }
+    }
 
     const renderArticleLinks = () => {
         return articles.map( a => 
             <>
-            <h3>{a.title}</h3>
-            <p>{a.id}</p>
-            {/* {renderSpan(pj)}
-            <NavLink
-                key={pj.title}
-                to={pj.path}
-                className={`sub-item row-${projects.indexOf(pj)}`}
-            ><h3>{pj.title}</h3>
-            </NavLink> */}
+            {renderSpan(a)}
+            <a
+                key={a.title}
+                href={a.canonical_url}
+                className={`sub-item row-${articles.indexOf(a)}`}
+            ><h3>{a.title}</h3>
+            </a>
             </>
         )
     }
