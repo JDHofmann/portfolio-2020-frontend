@@ -1,11 +1,10 @@
 import './styles/app.css';
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router'
 import Header from './containers/Header';
 import Project from './containers/Project';
 import Projects from './containers/Projects';
 import { projects } from './store.js'
-// import About from './containers/About'
 import Links from './containers/Links';
 import Articles from './containers/Articles';
 
@@ -20,9 +19,16 @@ export default function App()
     linkText: "Blog"},
     {linkUrl: "mailto:jdbrewerhofmann@gmail.com",
     linkText: "jdbrewerhofmann@gmail.com"}
-]
+  ]
 
+  const [articles, setArticles] = useState(null)
+  const [gridLength, setGridLength] = useState(0)
 
+  useEffect(() => {
+      fetch(`https://dev.to/api/articles?username=jdbrewerhofmann`)
+      .then(resp => resp.json())
+      .then(console.log)
+  })
 
   return (
     <main>
@@ -53,8 +59,7 @@ export default function App()
                       <Header />
                       <Projects />
                       <Links links={links}/>
-                      <Articles />
-                      {/* <About /> */}
+                      <Articles articles={articles}/>
                       </>
                   }
               />
