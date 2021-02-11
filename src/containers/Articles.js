@@ -1,4 +1,4 @@
-// import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 export default function Articles({articles}){
@@ -24,12 +24,12 @@ export default function Articles({articles}){
         return articles.map( a => 
             <>
             {renderSpan(a)}
-            <a
+            <NavLink
                 key={a.title}
-                href={a.canonical_url}
+                to={`/${a.id}`}
                 className={`sub-item row-${articles.indexOf(a)}`}
             ><h3>{a.title}</h3>
-            </a>
+            </NavLink>
             </>
         )
     }

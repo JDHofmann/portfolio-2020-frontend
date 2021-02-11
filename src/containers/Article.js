@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
+import { NavLink } from 'react-router-dom'
+
 
 export default function Article(){
 
@@ -33,7 +35,9 @@ export default function Article(){
     return(
         <div>
             {renderArticle()}
-            {/* {console.log(article)} */}
+            <NavLink 
+            className="home-btn"
+            to="/"><h3>Home Page</h3></NavLink>
         </div>
     )
 }
