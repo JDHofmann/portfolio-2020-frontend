@@ -31,7 +31,7 @@ export default function App()
   const fetchData = async() => {
     const result = await fetch(`https://dev.to/api/articles?username=jdbrewerhofmann`)
     const data = await result.json()
-    setArticles(data)
+    setArticles(data.slice(0,5))
   }
 
   return (
