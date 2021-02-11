@@ -265,3 +265,14 @@ a {
     border-bottom: 1px solid;
     border-radius: 0 10px 10px 0;
 }
+
+.markdown {
+    p {
+        margin: 2.5vh auto;
+        text-align: left;
+    }
+    pre {
+        text-align: left;
+        color: $highlight;
+    }
+}

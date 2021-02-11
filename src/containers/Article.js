@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import matter from 'gray-matter'
+import ReactMarkdown from 'react-markdown'
 
 export default function Article(){
 
@@ -21,8 +22,11 @@ export default function Article(){
         return article === null ? <p>loading...</p> :
         <>
         <h1>{title}</h1>
-        <div>{article.content}</div>
         
+        <ReactMarkdown 
+            source={article.content}
+            className="markdown"
+        />
         </>
     }
 
