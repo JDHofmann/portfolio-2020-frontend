@@ -1,65 +1,82 @@
 import './styles/app.css';
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router'
 import Header from './containers/Header';
 import Project from './containers/Project';
 import Projects from './containers/Projects';
 import { projects } from './store.js'
-// import About from './containers/About'
 import Links from './containers/Links';
+import Articles from './containers/Articles';
+import Article from './containers/Article';
 
 
-class App extends React.Component{
+export default function App()
+{
 
-  links = [
+  const links = [
     {linkUrl: "https://github.com/JDHofmann",
     linkText: "Github"},
     {linkUrl: "https://dev.to/jdbrewerhofmann",
     linkText: "Blog"},
     {linkUrl: "mailto:jdbrewerhofmann@gmail.com",
     linkText: "jdbrewerhofmann@gmail.com"}
-]
+  ]
 
-  render(){
+  const [articles, setArticles] = useState(null)
 
-    return (
-      <main>
-        <ul className="content">
-          <Switch>
-                <Route 
-                    path="/tombardier"
-                    render={ () => 
-                      <Project project={projects[0]}/>
-                    }
-                />
-                <Route 
-                    path="/bestbey"
-                    render={ () => 
-                      <Project project={projects[1]}/>
-                    }
-                />
-                <Route 
-                  path="/starwars"
-                  render={ () => 
-                    <Project project={projects[2]}/>
-                  }
-                />
-                <Route 
-                    path="/"
-                    render={ () => 
-                        <>
-                        <Header />
-                        <Projects />
-                        <Links links={this.links}/>
-                        {/* <About /> */}
-                        </>
-                    }
-                />
-            </Switch>
-        </ul>
-      </main>
-    )
+  useEffect( () => {
+    fetchData()
+  }, [])
+  
+  const fetchData = async() => {
+    const result = await fetch(`https://dev.to/api/articles?username=jdbrewerhofmann`)
+    const data = await result.json()
+    setArticles(data)
   }
+
+  return (
+    <main>
+      <ul className="content">
+        <Switch>
+              <Route 
+                  path="/test"
+                  render={ () => 
+                      <Article />
+                  }
+              />
+              <Route 
+                  path="/tombardier"
+                  render={ () => 
+                    <Project project={projects[0]}/>
+                  }
+              />
+              <Route 
+                  path="/bestbey"
+                  render={ () => 
+                    <Project project={projects[1]}/>
+                  }
+              />
+              <Route 
+                path="/starwars"
+                render={ () => 
+                  <Project project={projects[2]}/>
+                }
+              />
+              <Route 
+                  path="/"
+                  render={ () => 
+                      <>
+                      <Header />
+                      <Projects />
+                      <Links links={links}/>
+                      <Articles articles={articles}/>
+                      </>
+                  }
+              />
+          </Switch>
+      </ul>
+    </main>
+  )
 }
 
-export default App;
+

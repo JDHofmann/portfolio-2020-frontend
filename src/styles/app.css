@@ -116,7 +116,7 @@ h3 {
 .home-btn a:focus, .home-btn a:hover {
   -webkit-transition: .3s;
   transition: .3s;
-  color: #ffc040;
+  color: #40ffc0;
   text-decoration: underline;
 }
 
@@ -153,7 +153,7 @@ a:hover h3, a:focus h3 {
   -webkit-transition: .3s;
   transition: .3s;
   margin: 0.75vmin;
-  color: #ffc040;
+  color: #40ffc0;
   text-decoration: underline;
 }
 
