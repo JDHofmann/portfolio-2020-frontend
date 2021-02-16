@@ -25,6 +25,7 @@ const Links = ({links}) => {
                 className={`sub-item row-${links.indexOf(l)}`}
                 rel="noreferrer" 
                 href={l.linkUrl} 
+                aria-label={`link to ${l.linkText}`}
             ><h3>{l.linkText}</h3></a>
             </>
         )
