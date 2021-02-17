@@ -6,7 +6,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a, span {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: none;
-  color: #ffffff;
+  color: #00ffff;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-family: 'Poppins', sans-serif;
@@ -16,7 +16,8 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a, span {
 }
 
 body {
-  background: #202020;
+  background: -webkit-gradient(linear, left top, left bottom, from(#101050), to(#101020));
+  background: linear-gradient(#101050, #101020);
   overflow-x: hidden;
 }
 
@@ -116,7 +117,7 @@ h3 {
 .home-btn a:focus, .home-btn a:hover {
   -webkit-transition: .3s;
   transition: .3s;
-  color: #40ffc0;
+  color: #ff88ff;
   text-decoration: underline;
 }
 
@@ -153,7 +154,7 @@ a:hover h3, a:focus h3 {
   -webkit-transition: .3s;
   transition: .3s;
   margin: 0.75vmin;
-  color: #40ffc0;
+  color: #ff88ff;
   text-decoration: underline;
 }
 
@@ -209,7 +210,7 @@ a:hover h3, a:focus h3 {
 
 .vert-line-box span {
   display: block;
-  background: #ffffff;
+  background: #00ffff;
   width: 1px;
   height: 100%;
   margin: 0 auto;
