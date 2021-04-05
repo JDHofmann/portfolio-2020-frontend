@@ -45,13 +45,13 @@ export default function App()
                   }
               />
               <Route 
-                  path="/tombardier"
+                  path="/candg"
                   render={ () => 
                     <Project project={projects[0]}/>
                   }
               />
               <Route 
-                  path="/bestbey"
+                  path="/tombardier"
                   render={ () => 
                     <Project project={projects[1]}/>
                   }

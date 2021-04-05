@@ -1,5 +1,19 @@
 export const projects = [
     {
+        path: "/candg",
+        title : "C&G E-commerce",
+        lesson: "I had a great opportunity to learn about realistic retail product databases while working on this project. In accounting for every possible product option, I developed a real appreciation for an very commonly used database design. I worked to make the site keyboard accessible, and integrating local storage to store user's cart items was a fun challenge as well.",
+        description: "C&G is a fully responsive e-commerce site utilizing a retail product database, a React & NextJS user interface, and a customized shopping cart. Styled with custom SASS and supported by a Ruby on Rails API.",
+        links : [
+            {linkUrl: "https://candg.netlify.app/",
+            linkText: "Live Demo"},
+            {linkUrl: "https://github.com/JDHofmann/plugs-frontend",
+            linkText: "Frontend Repo"},
+            {linkUrl: "https://github.com/JDHofmann/plugs-backend",
+            linkText: "Backend Repo"}
+        ]
+    },
+    {
         path: "/tombardier",
         title : "Tombardier",
         lesson: "Initially I had a lot of difficulty implementing active storage and cloud storage into Tombardier. My solution was to deconstruct each of Tombardier's functionalities into it's own application. From there, I combined functionalities one at a time until I achieved my MVP.",
@@ -14,20 +28,6 @@ export const projects = [
             linkText: "Backend Repo"},
             {linkUrl: "https://www.youtube.com/watch?v=p_RS2x-V300",
             linkText: "YouTube Demo"}
-        ]
-    },
-    {
-        path: "/bestbey",
-        title : "Bestbey",
-        lesson: "I had a great opportunity to learn about realistic retail product databases while working on this project. Accounting for every possible product option is a bigger undertaking than I anticipated. I developed a real appreciation for an very commonly used database design.",
-        description: "Bestbey is an e-commerce site utilizing a retail product database, a full user interface, and a customized shopping cart. Built with React and a Ruby on Rails API.",
-        links : [
-            {linkUrl: "https://bestbey-ecommerce.netlify.app/",
-            linkText: "Live Demo"},
-            {linkUrl: "https://github.com/JDHofmann/bestbey-frontend",
-            linkText: "Frontend Repo"},
-            {linkUrl: "https://github.com/JDHofmann/bestbey-backend-v2.1",
-            linkText: "Backend Repo"}
         ]
     },
     {
