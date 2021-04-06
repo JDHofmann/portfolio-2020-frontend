@@ -22,9 +22,9 @@ export const projects = [
         links : [
             {linkUrl: "https://tombardier.netlify.app/",
             linkText: "Live Demo"},
-            {linkUrl: "https://github.com/JDHofmann/tombardier-frontend-dev",
+            {linkUrl: "https://github.com/JDHofmann/tombardier-live-demo-frontend",
             linkText: "Frontend Repo"},
-            {linkUrl: "https://github.com/JDHofmann/tombardier-backend-dev",
+            {linkUrl: "https://github.com/JDHofmann/tombardier-live-demo-backend-two",
             linkText: "Backend Repo"},
             {linkUrl: "https://www.youtube.com/watch?v=p_RS2x-V300",
             linkText: "YouTube Demo"}
