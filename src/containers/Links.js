@@ -26,7 +26,7 @@ const Links = ({links}) => {
                 rel="noreferrer" 
                 href={l.linkUrl} 
                 aria-label={`link to ${l.linkText}`}
-            ><h3>{l.linkText}</h3></a>
+            >{l.linkText}</a>
             </>
         )
     }

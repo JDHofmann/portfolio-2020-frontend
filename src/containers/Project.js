@@ -32,7 +32,7 @@ const Project = ({project}) => {
         <Links links={project.links}/>
         <NavLink 
             className="home-btn"
-            to="/"><h3>Home Page</h3></NavLink>
+            to="/">Home Page</NavLink>
         </>
     )
 }
