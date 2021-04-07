@@ -29,7 +29,7 @@ export default function Articles({articles}){
                 href={a.canonical_url}
                 className={`sub-item row-${articles.indexOf(a)}`}
                 aria-label={`link to article titled ${a.title}`}
-            ><h3>{a.title}</h3>
+            >{a.title}
             </a>
             </>
         )

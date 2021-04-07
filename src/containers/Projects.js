@@ -28,7 +28,10 @@ const Projects = () => {
                 to={pj.path}
                 className={`sub-item row-${projects.indexOf(pj)}`}
                 aria-label={pj.title}
-            ><h3>{pj.title}</h3>
+            >
+                {/* <h3> */}
+                    {pj.title}
+                {/* </h3> */}
             </NavLink>
             </>
         )

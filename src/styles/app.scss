@@ -10,9 +10,24 @@
 
 @mixin contentWrap(){
     @include border();
-    padding: .4vmin 5vw;
+    padding: .75vmin;
     border-radius: 7.5px;
     overflow-y: hidden;
+}
+
+@mixin borderAndHover(){
+    @include border();
+    padding: 10px;
+    border-radius: 7.5px;
+    overflow-y: hidden;
+    transition: .3s;
+    &:focus, &:hover {
+        color: $highlight;
+        text-decoration: underline;
+        border-color: $light;
+        outline: 1px solid $light;
+        outline-offset: -5px;
+    }
 }
 
 @mixin subItem(){
@@ -68,16 +83,18 @@ h1 {
     grid-column: 1/2;
     grid-row: 1/3;
     z-index: 5;
-    padding: .75vmin 1vw;
-    margin: 0.75vmin;
+    padding: 1vmin;
+    outline: 1px solid $light;
+    outline-offset: -1vmin;
+    // margin: 0.75vmin;
 }
 
-.title-wrapper {
-    @include border();
-    grid-column: 1/2;
-    grid-row: 1/3;
-    border-radius: 10px;
-}
+// .title-wrapper {
+//     @include border();
+//     grid-column: 1/2;
+//     grid-row: 1/3;
+//     border-radius: 10px;
+// }
 
 .pho-title-wrapper {
     @include border();
@@ -102,17 +119,12 @@ h3 {
 }
 
 .home-btn {
+    @include fluidText(16px, 20, 16);
     width: 50%;
     max-width: 300px;
     display: block;
     margin: 0 auto;
-    a {
-        &:focus, &:hover {
-                transition: .3s;
-                color: $highlight;
-                text-decoration: underline;
-        }
-    }
+    @include borderAndHover();
 }
 
 .subtitle {
@@ -158,6 +170,17 @@ a {
 
 .sub-item {
     @include subItem();
+    @include borderAndHover();
+    margin: 5px 0;
+}
+
+.sub-item-text {
+    @include subItem();
+    margin: 5px 0;
+    @include border();
+    padding: 10px;
+    border-radius: 7.5px;
+    overflow-y: hidden;
 }
 
 .vert-line-box {
