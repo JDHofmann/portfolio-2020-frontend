@@ -12,11 +12,11 @@ const Header = () => {
             style={grid}
             className="grid"
         >
-            <div
+            {/* <div
                 className="title-wrapper"
-            >
+            > */}
                 <h1>JD Brewer-Hofmann</h1>
-            </div>
+            {/* </div> */}
             <span className="line"></span>
             <span className="path path-begin-end"></span>
             <p className="sub-item row-0">I am web developer, inclusive UX/UI enthusiast, musician, and graduate of Flatiron School's software engineering program. I enjoy building inclusive systems and filling my apartment with plants.</p>
