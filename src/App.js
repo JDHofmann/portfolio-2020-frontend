@@ -7,7 +7,7 @@ import Projects from './containers/Projects';
 import { projects } from './store.js'
 import Links from './containers/Links';
 import Articles from './containers/Articles';
-import Article from './containers/Article';
+// import Article from './containers/Article';
 
 
 export default function App()
