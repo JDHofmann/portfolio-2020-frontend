@@ -39,27 +39,27 @@ export default function App()
       <ul className="content">
         <Switch>
               <Route 
-                  path="/test"
-                  render={ () => 
-                      <Article />
-                  }
-              />
-              <Route 
-                  path="/candg"
+                  path="/nopk"
                   render={ () => 
                     <Project project={projects[0]}/>
                   }
               />
               <Route 
-                  path="/tombardier"
+                  path="/candg"
                   render={ () => 
                     <Project project={projects[1]}/>
                   }
               />
               <Route 
+                  path="/tombardier"
+                  render={ () => 
+                    <Project project={projects[2]}/>
+                  }
+              />
+              <Route 
                 path="/starwars"
                 render={ () => 
-                  <Project project={projects[2]}/>
+                  <Project project={projects[3]}/>
                 }
               />
               <Route 
