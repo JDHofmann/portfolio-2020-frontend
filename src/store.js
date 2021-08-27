@@ -1,5 +1,18 @@
 export const projects = [
     {
+        path: "/nopk",
+        title : "North Park Transportation",
+        lesson: "While working a contract with Shift Lab NYC, I worked directly with Shift Lab's CEO and CMO in a ground up rebuild. North Park provided designs, and I worked directly with them to devise responsive solutions",
+        description: "North Park Transportation is an LTL company based in Colorado. North Park Trasportation hired Shift Lab to replatform their site to Netlify CMS and NextJS in early 2021. The timeline was 2 months, and Shift Lab delivered the product on schedule",
+        gif: '/images/nopk.gif',
+        links : [
+            {linkUrl: "https://nopk.com/",
+            linkText: "nopk.com"},
+            {linkUrl: "https://shiftlab.co/",
+            linkText: "shift lab"},
+        ]
+    },
+    {
         path: "/candg",
         title : "C&G E-commerce",
         lesson: "I had a great opportunity to learn about realistic retail product databases while working on this project. In accounting for every possible product option, I developed a real appreciation for an very commonly used database design. I worked to make the site keyboard accessible, and integrating local storage to store user's cart items was a fun challenge as well.",
@@ -20,8 +33,8 @@ export const projects = [
         description: "Tombardier comes out of the box ready to provide users with their own personal portfolio site. With an inline editable UI, users can edit content right in their browsers. Built with React, Redux, Ruby on Rails, Active Storage, and AWS cloud storage.",
         gif: '/images/Tombardier.gif',
         links : [
-            {linkUrl: "https://tombardier.netlify.app/",
-            linkText: "Live Demo"},
+            // {linkUrl: "https://tombardier.netlify.app/",
+            // linkText: "Live Demo"},
             {linkUrl: "https://github.com/JDHofmann/tombardier-live-demo-frontend",
             linkText: "Frontend Repo"},
             {linkUrl: "https://github.com/JDHofmann/tombardier-live-demo-backend-two",
